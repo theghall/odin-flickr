@@ -1,0 +1,6 @@
+<h1>Home</h1>
+<%= form_for(:flickr, url: '/index', method: 'get') do |f| %>
+	<%= f.label 'Flickr ID' %>
+	<%= f.text_field :flickr_id %>
+	<%= f.submit 'Submit' %>
+<% end %>

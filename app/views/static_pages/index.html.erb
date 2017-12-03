@@ -1,0 +1,7 @@
+<h1>Photos for flickr user id: <%= @flickr_id %></h1>
+<div id="gallery">
+	<% @photos.each do |p| %>
+		<div class="photo"><%= image_tag(p.url_t) %></div>
+	<% end %>
+</div>
+<%= link_to 'Home', '/' %>
